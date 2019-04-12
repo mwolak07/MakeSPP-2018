@@ -12,6 +12,7 @@ Environment:
 	- lxml 		 --> pip install lxml
 
 *environment automatically created in setup batch script
+*pip might default to python 2, in that case, use pip3
 
 Team:
 Mateusz Wolak, Jon Riklan
