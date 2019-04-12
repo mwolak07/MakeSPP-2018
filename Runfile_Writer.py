@@ -1,0 +1,13 @@
+# Opens or creates Run.bat with write+ mode
+f = open("Run.bat", "w+")
+f.truncate()
+f.write("echo Running project using python.exe from virtualenv\n")
+f.write("cd Env/Scripts\n")
+f.write("call activate\n")
+f.write("cd ..\n")
+f.write("cd ..\n")
+f.write("call python MasterReader.py\n")
+f.write("call deactivate\n")
+f.write("echo Opening output file\n")
+f.write("notepad Output.txt\n")
+f.close()
